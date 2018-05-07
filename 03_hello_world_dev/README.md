@@ -29,7 +29,7 @@ Compiling the application can be done with the commands :
 
 ```npm run dev```
 
-or 
+or
 
 ```npm run build```
 
@@ -47,6 +47,8 @@ For development build instead of `npm run dev` and `npm run start` in an other w
 ## Note
 
 Because of the use of gzip a separate index file is used in development mode, this is not working well with `webpack-dev-server` (apache or nginx would have no problem changing the index file and/or redirect) a `bypass` configuration is used even though this is not very elegant. If you find a better solution feel free to write a solution in the issues or directly create a pull request.
+
+To avoid further inconvenience the compressing plugin will not be used in other samples.
 
 Some uses `alias: { inferno: path.resolve(require.resolve('inferno/dist/index.dev.esm.js')) }` instead of `alias: { inferno: require.resolve('inferno/dist/index.dev.esm.js') }`, this might be due to OS/environment needs (path separator), the issue has not been verified so the sample keeps the minimal way.
 

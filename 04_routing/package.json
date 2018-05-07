@@ -1,12 +1,11 @@
 {
 	"private": true,
-	"name": "inferno_hello_prod",
+	"name": "inferno_routing",
 	"version": "1.0.0",
-	"description": "Inferno 'Hello world' application with production settings",
 	"main": "index.js",
 	"dependencies": {
-		"compression-webpack-plugin": "^1.1.11",
-		"inferno": "^5.0.4"
+		"inferno": "^5.0.4",
+		"inferno-router": "^5.0.4"
 	},
 	"devDependencies": {
 		"babel-loader": "^7.1.4",

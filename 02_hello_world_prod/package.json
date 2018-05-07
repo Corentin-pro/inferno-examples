@@ -1,4 +1,5 @@
 {
+	"private": true,
 	"name": "inferno_hello_prod",
 	"version": "1.0.0",
 	"description": "Inferno 'Hello world' application with production settings",
@@ -17,6 +18,5 @@
 		"build": "webpack",
 		"start": "node server.js"
 	},
-	"author": "Corentin Risselin",
 	"license": "MIT"
 }
