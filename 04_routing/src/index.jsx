@@ -1,7 +1,8 @@
-import Inferno, {render} from 'inferno';
-import {Router, Route} from 'inferno-router';
-import createHistory from 'history/createBrowserHistory';
-import {App, Home, User, Users, NoMatch} from './tags';
+import Inferno, {render} from 'inferno'
+import {Router, Route} from 'inferno-router'
+import createHistory from 'history/createBrowserHistory'
+
+import {App, Home, User, Users, NoMatch} from './tags.jsx'
 
 const history = createHistory();
 
@@ -17,4 +18,4 @@ const routes = (
 	</Router>
 );
 
-render(routes, document.getElementById('app'));
+render(routes, document.getElementById('root'));

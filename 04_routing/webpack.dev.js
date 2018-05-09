@@ -24,7 +24,9 @@ module.exports = Object.assign(
 		// webpack-dev-server configuration
 		devServer: {
 			contentBase: path.join(__dirname),
-			port: 8080
+			port: 8080,
+			publicPath: '/public',
+			historyApiFallback: true // Avoid Content Security Policy (not needed with a hashHistory)
 		}
 	}
 );

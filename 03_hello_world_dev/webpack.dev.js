@@ -24,11 +24,11 @@ module.exports = Object.assign(
 		// webpack-dev-server configuration
 		devServer: {
 			contentBase: path.join(__dirname),
-			compress: true,
 			port: 8080,
+			publicPath: '/public',
 			// Not elegant way to get rid of the gzip path in index.html
 			proxy: {
-				'/$': {
+				'/': {
 					target: 'http://localhost:8080',
 					secure: false,
 					bypass: function(request, response, proxyOptions) {
